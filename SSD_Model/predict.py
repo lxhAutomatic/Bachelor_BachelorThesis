@@ -1,13 +1,13 @@
 '''
-predict.py有几个注意点
-1、该代码无法直接进行批量预测，如果想要批量预测，可以利用os.listdir()遍历文件夹，利用Image.open打开图片文件进行预测。
-具体流程可以参考get_dr_txt.py，在get_dr_txt.py即实现了遍历还实现了目标信息的保存。
-2、如果想要进行检测完的图片的保存，利用r_image.save("img.jpg")即可保存，直接在predict.py里进行修改即可。 
-3、如果想要获得预测框的坐标，可以进入detect_image函数，在绘图部分读取top，left，bottom，right这四个值。
-4、如果想要利用预测框截取下目标，可以进入detect_image函数，在绘图部分利用获取到的top，left，bottom，right这四个值
-在原图上利用矩阵的方式进行截取。
-5、如果想要在预测图上写额外的字，比如检测到的特定目标的数量，可以进入detect_image函数，在绘图部分对predicted_class进行判断，
-比如判断if predicted_class == 'car': 即可判断当前目标是否为车，然后记录数量即可。利用draw.text即可写字。
+There are several points to note about predict.py
+1. This code cannot directly perform batch prediction. If you want to perform batch prediction, you can use os.listdir() to traverse the folder and use Image.open to open the image file for prediction.
+For the specific process, please refer to get_dr_txt.py. In get_dr_txt.py, traversal is realized and target information is saved.
+2. If you want to save the detected image, use r_image.save("img.jpg") to save it, and modify it directly in predict.py.
+3. If you want to get the coordinates of the prediction box, you can enter the detect_image function and read the four values ​​​​of top, left, bottom, and right in the drawing part.
+4. If you want to use the prediction frame to intercept the target, you can enter the detect_image function and use the obtained four values ​​of top, left, bottom, and right in the drawing part.
+Use the matrix method to intercept the original image.
+5. If you want to write additional words on the prediction map, such as the number of specific targets detected, you can enter the detect_image function and judge predicted_class in the drawing part.
+For example, if predicted_class == 'car': can determine whether the current target is a car, and then record the number. Use draw.text to write.
 '''
 from PIL import Image
 
