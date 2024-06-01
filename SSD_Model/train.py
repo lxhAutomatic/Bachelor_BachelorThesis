@@ -21,11 +21,11 @@ warnings.filterwarnings("ignore")
 
 
 # ------------------------------------------------------------------------#
-#   这里看到的train.py和视频上不太一样
-#   我重构了一下train.py，添加了验证集
-#   这样训练的时候可以有个参考。
-#   训练前注意在config.py里面修改num_classes
-#   训练世代、学习率、批处理大小等参数在本代码靠下的if True:内进行修改。
+#   The train.py you see here is different from the one in the video.
+#   I refactored train.py and added a validation set
+#   This way you can have a reference when training
+#   Before training, be sure to modify num_classes in config.py
+#   Parameters such as training generation, learning rate, and batch size can be modified in the if True: lower part of this code.
 # -------------------------------------------------------------------------#
 def get_lr(optimizer):
     for param_group in optimizer.param_groups:
@@ -53,20 +53,20 @@ def fit_one_epoch(net, criterion, epoch, epoch_size, epoch_size_val, gen, genval
                     images = Variable(torch.from_numpy(images).type(torch.FloatTensor))
                     targets = [Variable(torch.from_numpy(ann).type(torch.FloatTensor)) for ann in targets]
             # ----------------------#
-            #   前向传播
+            #   forward propagation
             # ----------------------#
             out = net(images)
             # ----------------------#
-            #   清零梯度
+            #   Clear gradient
             # ----------------------#
             optimizer.zero_grad()
             # ----------------------#
-            #   计算损失
+            #   Calculate losses
             # ----------------------#
             loss_l, loss_c = criterion(out, targets)
             loss = loss_l + loss_c
             # ----------------------#
-            #   反向传播
+            #   Backpropagation
             # ----------------------#
             loss.backward()
             optimizer.step()
@@ -123,12 +123,12 @@ def fit_one_epoch(net, criterion, epoch, epoch_size, epoch_size_val, gen, genval
 
 if __name__ == "__main__":
     # -------------------------------#
-    #   是否使用Cuda
-    #   没有GPU可以设置成False
+    #   Whether to use Cuda
+    #   No GPU can be set to False
     # -------------------------------#
     Cuda = True
     # -------------------------------#
-    #   Dataloder的使用
+    #   Use of Dataloder
     # -------------------------------#
     Use_Data_Loader = True
 
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
     annotation_path = '2007_train.txt'
     # ----------------------------------------------------------------------#
-    #   验证集的划分在train.py代码里面进行
-    #   2007_test.txt和2007_val.txt里面没有内容是正常的。训练不会使用到。
-    #   当前划分方式下，验证集和训练集的比例为1:9
+    #   The division of the validation set is carried out in the train.py code
+    #   It is normal that there is no content in 2007_test.txt and 2007_val.txt. Not used for training.
+    #   Under the current partitioning method, the ratio of validation set to training set is 1:9
     # ----------------------------------------------------------------------#
     val_split = 0.1
     with open(annotation_path) as f:
@@ -171,12 +171,12 @@ if __name__ == "__main__":
         f.write('epoch,loss,val_loss')
 
     # ------------------------------------------------------#
-    #   主干特征提取网络特征通用，冻结训练可以加快训练速度
-    #   也可以在训练初期防止权值被破坏。
-    #   Init_Epoch为起始世代
-    #   Freeze_Epoch为冻结训练的世代
-    #   Unfreeze_Epoch总训练世代
-    #   提示OOM或者显存不足请调小Batch_size
+    #   Backbone feature extraction network features are universal, and frozen training can speed up training.
+    #   It can also prevent the weights from being destroyed in the early stages of training.
+    #   Init_Epoch is the starting epoch
+    #   Freeze_Epoch is the epoch that freezes training
+    #   Unfreeze_Epoch is the total training epoch
+    #   If it prompts OOM or insufficient video memory, please adjust the Batch_size smaller.
     # ------------------------------------------------------#
     if True:
         lr = 5e-4
