@@ -22,12 +22,12 @@ class mAP_SSD(SSD):
     def generate(self):
         self.confidence = 0.01
         #-------------------------------#
-        #   计算总的类的数量
+        #   Calculate the numer of class
         #-------------------------------#
         self.num_classes = len(self.class_names) + 1
 
         #-------------------------------#
-        #   载入模型与权值
+        #   import model and weight
         #-------------------------------#
         model = get_ssd("test", self.num_classes, self.confidence, self.nms_iou)
         print('Loading weights into state dict...')
@@ -41,7 +41,7 @@ class mAP_SSD(SSD):
             self.net = self.net.cuda()
 
         print('{} model, anchors, and classes loaded.'.format(self.model_path))
-        # 画框设置不同的颜色
+        # Set the color of the detection square
         hsv_tuples = [(x / len(self.class_names), 1., 1.)
                       for x in range(len(self.class_names))]
         self.colors = list(map(lambda x: colorsys.hsv_to_rgb(*x), hsv_tuples))
@@ -50,15 +50,15 @@ class mAP_SSD(SSD):
                 self.colors))
 
     #---------------------------------------------------#
-    #   检测图片
+    #   Detect images
     #---------------------------------------------------#
     def detect_image(self,image_id,image):
         f = open("./input/detection-results/"+image_id+".txt","w") 
         image_shape = np.array(np.shape(image)[0:2])
     
         #---------------------------------------------------------#
-        #   给图像增加灰条，实现不失真的resize
-        #   也可以直接resize进行识别
+        #   Add gray bars to the image to achieve distortion-free resize
+        #   You can also directly resize for identification.
         #---------------------------------------------------------#
         if self.letterbox_image:
             crop_img = np.array(letterbox_image(image, (self.input_shape[1],self.input_shape[0])))
@@ -96,7 +96,7 @@ class mAP_SSD(SSD):
         top_bboxes = np.array(top_bboxes)
         top_xmin, top_ymin, top_xmax, top_ymax = np.expand_dims(top_bboxes[:,0],-1),np.expand_dims(top_bboxes[:,1],-1),np.expand_dims(top_bboxes[:,2],-1),np.expand_dims(top_bboxes[:,3],-1)
         #-----------------------------------------------------------#
-        #   去掉灰条部分
+        #   Remove the gray bar
         #-----------------------------------------------------------#
         if self.letterbox_image:
             boxes = ssd_correct_boxes(top_ymin,top_xmin,top_ymax,top_xmax,np.array([self.input_shape[0],self.input_shape[1]]),image_shape)
@@ -131,7 +131,7 @@ if not os.path.exists("./input/images-optional"):
 for image_id in tqdm(image_ids):
     image_path = "./VOCdevkit/VOC2007/JPEGImages/"+image_id+".jpg"
     image = Image.open(image_path)
-    # 开启后在之后计算mAP可以可视化
+    # After turning it on, mAP can be calculated and visualized later.
     # image.save("./input/images-optional/"+image_id+".jpg")
     ssd.detect_image(image_id,image)
     
