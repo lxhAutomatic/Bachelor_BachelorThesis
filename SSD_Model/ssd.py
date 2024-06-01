@@ -17,11 +17,11 @@ warnings.filterwarnings("ignore")
 
 MEANS = (104, 117, 123)
 #--------------------------------------------#
-#   使用自己训练好的模型预测需要修改2个参数
-#   model_path和classes_path都需要修改！
-#   如果出现shape不匹配
-#   一定要注意训练时的config里面的num_classes、
-#   model_path和classes_path参数的修改
+#   Using your own trained model to predict requires modifying 2 parameters.
+#   Both model_path and classes_path need to be modified!
+#   If there is a shape mismatch
+#   Be sure to pay attention to num_classes and num_classes in the config during training.
+#   Modification of model_path and classes_path parameters
 #--------------------------------------------#
 class SSD(object):
     _defaults = {
@@ -32,8 +32,8 @@ class SSD(object):
         "nms_iou"           : 0.45,
         "cuda"              : True,
         #---------------------------------------------------------------------#
-        #   该变量用于控制是否使用letterbox_image对输入图像进行不失真的resize，
-        #   在多次测试后，发现关闭letterbox_image直接resize的效果更好
+        #   This variable is used to control whether to use letterbox_image to resize the input image without distortion.
+        #   After many tests, it was found that turning off letterbox_image and resizing directly has a better effect.
         #---------------------------------------------------------------------#
         "letterbox_image"   : False,
     }
@@ -46,7 +46,7 @@ class SSD(object):
             return "Unrecognized attribute name '" + n + "'"
 
     #---------------------------------------------------#
-    #   初始化SSD
+    #   Initialize SSD model
     #---------------------------------------------------#
     def __init__(self, **kwargs):
         self.__dict__.update(self._defaults)
@@ -54,7 +54,7 @@ class SSD(object):
         self.generate()
         
     #---------------------------------------------------#
-    #   获得所有的分类
+    #   Get all categories
     #---------------------------------------------------#
     def _get_class(self):
         classes_path = os.path.expanduser(self.classes_path)
@@ -64,16 +64,16 @@ class SSD(object):
         return class_names
     
     #---------------------------------------------------#
-    #   载入模型
+    #   Load model
     #---------------------------------------------------#
     def generate(self):
         #-------------------------------#
-        #   计算总的类的数量
+        #   Calculate the total number of classes
         #-------------------------------#
         self.num_classes = len(self.class_names) + 1
 
         #-------------------------------#
-        #   载入模型与权值
+        #   Load model and weights
         #-------------------------------#
         model = ssd.get_ssd("test", self.num_classes, self.confidence, self.nms_iou)
         print('Loading weights into state dict...')
@@ -87,7 +87,7 @@ class SSD(object):
             self.net = self.net.cuda()
 
         print('{} model, anchors, and classes loaded.'.format(self.model_path))
-        # 画框设置不同的颜色
+        # Picture frames set different colors
         hsv_tuples = [(x / len(self.class_names), 1., 1.)
                       for x in range(len(self.class_names))]
         self.colors = list(map(lambda x: colorsys.hsv_to_rgb(*x), hsv_tuples))
@@ -96,14 +96,14 @@ class SSD(object):
                 self.colors))
 
     #---------------------------------------------------#
-    #   检测图片
+    #   Detect pictures
     #---------------------------------------------------#
     def detect_image(self, image):
         image_shape = np.array(np.shape(image)[0:2])
 
         #---------------------------------------------------------#
-        #   给图像增加灰条，实现不失真的resize
-        #   也可以直接resize进行识别
+        #   Add gray bars to the image to achieve distortion-free resize
+        #   You can also directly resize for identification.
         #---------------------------------------------------------#
         if self.letterbox_image:
             crop_img = np.array(letterbox_image(image, (self.input_shape[1],self.input_shape[0])))
@@ -114,14 +114,14 @@ class SSD(object):
         photo = np.array(crop_img,dtype = np.float64)
         with torch.no_grad():
             #---------------------------------------------------#
-            #   图片预处理，归一化
+            #   Image preprocessing, normalization
             #---------------------------------------------------#
             photo = Variable(torch.from_numpy(np.expand_dims(np.transpose(photo - MEANS, (2,0,1)), 0)).type(torch.FloatTensor))
             if self.cuda:
                 photo = photo.cuda()
                 
             #---------------------------------------------------#
-            #   传入网络进行预测
+            #   Incoming network to make predictions
             #---------------------------------------------------#
             preds = self.net(photo)
         
@@ -129,19 +129,19 @@ class SSD(object):
             top_label = []
             top_bboxes = []
             #---------------------------------------------------#
-            #   preds的shape为 1, num_classes, top_k, 5
+            #   The shape of preds is 1, num_classes, top_k, 5
             #---------------------------------------------------#
             for i in range(preds.size(1)):
                 j = 0
                 while preds[0, i, j, 0] >= self.confidence:
                     #---------------------------------------------------#
-                    #   score为当前预测框的得分
-                    #   label_name为预测框的种类
+                    #   score is the score of the current prediction box
+                    #   label_name is the type of prediction box
                     #---------------------------------------------------#
                     score = preds[0, i, j, 0]
                     label_name = self.class_names[i-1]
                     #---------------------------------------------------#
-                    #   pt的shape为4, 当前预测框的左上角右下角
+                    #   The shape of pt is 4, the upper left corner and lower right corner of the current prediction box
                     #---------------------------------------------------#
                     pt = (preds[0, i, j, 1:]).detach().numpy()
                     coords = [pt[0], pt[1], pt[2], pt[3]]
@@ -150,7 +150,7 @@ class SSD(object):
                     top_bboxes.append(coords)
                     j = j + 1
 
-        # 如果不存在满足门限的预测框，直接返回原图
+        # If there is no prediction box that meets the threshold, return directly to the original image.
         if len(top_conf)<=0:
             return image
         
@@ -160,7 +160,7 @@ class SSD(object):
         top_xmin, top_ymin, top_xmax, top_ymax = np.expand_dims(top_bboxes[:,0], -1),np.expand_dims(top_bboxes[:,1], -1),np.expand_dims(top_bboxes[:,2], -1),np.expand_dims(top_bboxes[:,3], -1)
 
         #-----------------------------------------------------------#
-        #   去掉灰条部分
+        #   Remove the gray stripe
         #-----------------------------------------------------------#
         if self.letterbox_image:
             boxes = ssd_correct_boxes(top_ymin,top_xmin,top_ymax,top_xmax,np.array([self.input_shape[0],self.input_shape[1]]),image_shape)
@@ -190,7 +190,7 @@ class SSD(object):
             bottom = min(np.shape(image)[0], np.floor(bottom + 0.5).astype('int32'))
             right = min(np.shape(image)[1], np.floor(right + 0.5).astype('int32'))
 
-            # 画框框
+            # draw the box
             label = '{} {:.2f}'.format(predicted_class, score)
             draw = ImageDraw.Draw(image)
             label_size = draw.textsize(label, font)
