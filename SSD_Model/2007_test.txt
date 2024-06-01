@@ -1,0 +1,180 @@
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000006.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000009.jpg 406,20,482,105,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000012.jpg 9,167,103,257,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000026.jpg 16,4,124,113,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000030.jpg 397,108,488,202,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000035.jpg 386,14,486,111,2 372,502,479,589,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000036.jpg 7,232,107,335,1 127,297,237,404,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000049.jpg 392,286,489,389,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000055.jpg 121,108,227,209,8 20,277,111,356,7 13,478,108,577,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000056.jpg 255,40,365,131,9 183,172,293,274,0 96,274,203,382,6 300,390,406,468,4 284,479,378,581,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000058.jpg 15,93,133,214,2 116,364,219,477,6 154,483,261,592,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000062.jpg 302,14,400,111,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000069.jpg 395,451,478,557,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000070.jpg 297,153,417,268,9 9,462,98,564,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000079.jpg 153,350,278,465,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000082.jpg 172,1,257,85,0 277,13,375,120,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000087.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000088.jpg 242,543,326,594,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000105.jpg 236,426,351,542,1 376,489,477,580,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000108.jpg 313,264,408,357,0 375,383,476,471,6 404,505,489,576,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000109.jpg 65,75,145,163,7 252,81,337,182,1 404,141,482,216,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000110.jpg 93,530,163,594,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000124.jpg 2,37,69,141,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000125.jpg 250,526,336,583,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000126.jpg 47,94,127,195,0 169,103,233,202,2 179,222,263,306,6 387,330,474,411,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000129.jpg 305,291,420,391,2 68,503,169,581,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000130.jpg 358,506,465,587,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000138.jpg 43,121,154,235,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000140.jpg 11,11,113,112,7 322,488,431,592,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000141.jpg 211,78,323,195,0 32,478,144,592,5 180,523,256,594,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000145.jpg 151,298,254,394,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000148.jpg 15,202,131,321,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000160.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000161.jpg 8,503,80,589,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000167.jpg 334,17,448,133,8 418,176,491,282,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000179.jpg 92,307,169,403,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000206.jpg 26,9,125,102,2 5,292,90,393,7 377,460,485,572,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000207.jpg 302,130,387,232,1 15,214,112,311,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000212.jpg 175,265,289,359,9 156,378,268,487,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000215.jpg 140,276,217,358,6 272,495,368,566,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000218.jpg 317,51,405,139,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000223.jpg 346,1,455,87,8 307,527,392,593,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000233.jpg 352,100,463,204,9 194,336,287,425,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000238.jpg 174,231,268,317,9 105,354,205,458,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000243.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000261.jpg 316,4,418,85,6 57,356,141,438,4 245,438,346,530,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000264.jpg 338,95,431,186,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000273.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000274.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000279.jpg 81,498,168,585,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000281.jpg 39,13,145,98,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000284.jpg 322,343,415,431,0 189,472,283,560,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000291.jpg 386,494,473,579,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000293.jpg 395,208,481,303,6 23,527,110,594,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000296.jpg 35,107,116,191,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000302.jpg 335,330,427,421,0 282,457,388,555,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000304.jpg 149,469,244,564,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000305.jpg 11,1,97,84,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000315.jpg 372,14,479,102,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000317.jpg 429,436,486,526,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000332.jpg 310,239,419,337,9 305,351,410,448,0 212,448,329,557,1 350,488,453,586,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000338.jpg 379,162,471,253,9 119,229,220,324,4 1,471,67,548,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000340.jpg 379,285,467,379,0 44,457,136,552,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000357.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000371.jpg 53,61,153,147,8 374,461,474,565,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000378.jpg 55,343,141,438,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000387.jpg 129,374,203,447,9 155,485,242,572,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000390.jpg 17,120,93,206,7 50,418,127,509,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000392.jpg 401,13,489,109,0 3,362,92,448,4 198,483,288,573,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000394.jpg 373,74,458,160,4 28,464,129,564,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000396.jpg 385,486,474,579,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000402.jpg 353,205,466,320,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000406.jpg 183,27,280,115,2 9,305,99,411,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000408.jpg 20,316,116,408,9 193,501,283,587,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000410.jpg 411,11,489,99,9 23,300,123,393,2 2,436,78,541,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000411.jpg 93,187,184,292,6 145,456,228,537,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000418.jpg 5,17,75,107,0 305,239,399,339,6 41,429,143,534,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000423.jpg 380,259,471,352,0 75,366,182,477,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000427.jpg 88,292,192,401,9 290,449,396,566,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000432.jpg 238,269,340,360,7 279,370,366,457,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000433.jpg 20,139,126,240,9 392,154,485,254,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000435.jpg 13,228,115,329,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000438.jpg 84,131,190,226,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000440.jpg 384,378,467,472,9 21,469,111,565,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000441.jpg 23,1,120,80,4 149,435,241,534,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000451.jpg 371,113,476,209,6 420,327,492,412,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000452.jpg 397,325,479,420,0 108,434,199,529,4 212,501,304,580,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000460.jpg 20,2,114,99,0 121,121,211,211,6 116,219,220,313,8 265,438,347,525,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000461.jpg 371,331,473,423,7 373,406,468,482,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000465.jpg 26,98,133,195,0 31,352,122,436,2 439,440,492,537,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000466.jpg 283,3,379,80,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000468.jpg 68,21,150,108,0 41,182,136,266,6 122,275,212,370,1 118,373,219,473,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000473.jpg 288,493,389,582,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000476.jpg 12,345,91,447,0 386,379,469,462,4 385,473,461,578,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000481.jpg 391,190,484,309,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000487.jpg 260,101,376,219,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000496.jpg 185,147,309,268,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000500.jpg 151,49,265,165,7 320,248,440,368,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000504.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000510.jpg 5,288,106,401,6 3,411,107,534,8 64,513,172,591,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000512.jpg 385,479,488,587,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000528.jpg 371,9,477,114,0 5,72,109,176,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000529.jpg 176,15,299,135,2 184,372,303,489,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000533.jpg 381,171,480,278,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000536.jpg 79,228,196,316,9 71,331,179,445,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000539.jpg 74,57,170,168,2 176,91,266,187,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000550.jpg 4,383,124,501,0 282,388,384,474,2 183,469,278,572,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000568.jpg 3,186,83,300,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000569.jpg 4,197,131,319,2 215,310,330,431,1 365,336,474,449,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000576.jpg 249,423,378,550,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000580.jpg 186,5,302,116,0 372,419,483,533,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000581.jpg 52,443,177,575,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000589.jpg 16,0,144,119,9 6,192,118,312,7 358,463,476,582,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000595.jpg 249,35,374,156,9 342,439,463,564,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000601.jpg 349,10,470,128,2 121,187,240,307,8 306,283,426,409,4 360,453,485,583,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000615.jpg 164,1,265,82,2 181,339,293,448,6 106,508,213,593,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000622.jpg 93,190,215,309,0 192,382,304,498,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000629.jpg 4,226,88,337,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000631.jpg 304,469,417,585,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000639.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000640.jpg 5,305,126,426,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000647.jpg 1,20,70,117,9 347,79,450,182,1 426,332,492,438,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000649.jpg 160,451,260,557,9 251,506,355,595,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000654.jpg 251,0,358,87,6 1,100,76,205,7 85,449,193,557,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000655.jpg 231,504,345,595,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000658.jpg 102,449,212,559,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000659.jpg 2,67,113,188,2 358,188,479,309,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000664.jpg 1,386,52,471,6 2,478,92,581,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000668.jpg 384,32,482,136,9 367,511,478,594,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000669.jpg 45,461,158,570,6 308,481,419,589,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000671.jpg 348,36,469,156,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000674.jpg 2,110,102,226,2 11,470,116,582,7 95,516,217,589,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000679.jpg 73,451,186,566,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000680.jpg 3,468,104,585,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000681.jpg 21,2,134,117,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000684.jpg 405,256,482,363,0 394,470,471,565,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000687.jpg 56,100,171,212,6 88,311,203,424,7 213,463,333,579,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000688.jpg 2,76,92,197,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000693.jpg 18,252,132,359,0 12,384,133,502,8 162,439,285,560,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000698.jpg 268,193,381,308,4 317,307,434,430,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000699.jpg 9,8,123,120,8 8,357,124,481,1 438,443,490,544,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000705.jpg 165,118,278,233,9 9,208,114,320,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000710.jpg 408,1,492,100,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000711.jpg
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000712.jpg 363,320,472,435,6 364,462,478,574,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000726.jpg 143,306,265,422,5 112,409,231,522,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000731.jpg 155,350,277,469,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000735.jpg 453,494,492,585,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000736.jpg 408,11,484,100,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000742.jpg 4,2,81,74,9 238,340,343,447,6 304,462,400,578,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000743.jpg 316,1,427,97,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000757.jpg 374,467,489,584,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000763.jpg 422,1,482,74,4 408,284,482,374,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000765.jpg 299,502,397,583,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000766.jpg 118,1,225,41,2 6,284,114,396,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000771.jpg 351,474,457,577,2
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000772.jpg 366,40,477,151,6 3,255,116,371,1 19,371,128,482,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000773.jpg 118,487,222,579,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000786.jpg 3,236,120,351,6 340,485,448,591,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000789.jpg 198,313,282,405,0 387,414,467,487,4 416,513,487,590,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000796.jpg 105,112,222,222,2 44,529,133,594,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000798.jpg 158,155,265,263,6 221,264,314,373,8 434,322,483,425,7 212,400,317,505,1 230,483,322,583,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000799.jpg 83,477,188,589,3
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000805.jpg 270,312,373,414,6
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000806.jpg 319,474,428,584,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000843.jpg 138,528,222,594,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000849.jpg 421,150,479,238,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000853.jpg 19,1,93,78,9 1,100,74,201,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000857.jpg 366,5,473,117,2 1,170,44,287,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000860.jpg 237,215,362,330,6 271,320,375,436,1 20,499,120,591,3 424,8,474,108,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000861.jpg 369,96,479,203,4 285,533,364,594,5
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000875.jpg 9,169,103,272,2 373,494,479,587,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000881.jpg 1,476,85,588,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000883.jpg 102,52,215,165,8 273,478,394,582,3 409,152,486,243,7
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000884.jpg 379,388,485,499,9
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000886.jpg 296,167,401,274,0 255,302,372,415,1
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000889.jpg 5,4,110,111,2 112,358,235,474,8
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000893.jpg 1,42,88,164,0 235,403,338,504,4
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000894.jpg 128,3,244,106,9 53,370,164,482,0
+C:\baidu\雷达目标检测对比\ssd/VOCdevkit/VOC2007/JPEGImages/000900.jpg 66,331,177,442,5
