@@ -4,11 +4,11 @@ import glob
 import xml.etree.ElementTree as ET
 
 '''
-！！！！！！！！！！！！！注意事项！！！！！！！！！！！！！
-# 这一部分是当xml有无关的类的时候，下方有代码可以进行筛选！
+！！！！！！！！！！！！！Precautions！！！！！！！！！！！！！
+# This part is when the xml has irrelevant classes, there is code below to filter it.！
 '''
 #---------------------------------------------------#
-#   获得类
+#   Get the class
 #---------------------------------------------------#
 def get_classes(classes_path):
     '''loads the classes'''
@@ -35,9 +35,9 @@ for image_id in image_ids:
                     difficult_flag = True
             obj_name = obj.find('name').text
             '''
-            ！！！！！！！！！！！！注意事项！！！！！！！！！！！！
-            # 这一部分是当xml有无关的类的时候，可以取消下面代码的注释
-            # 利用对应的classes.txt来进行筛选！！！！！！！！！！！！
+            ！！！！！！！！！！！！Precautions！！！！！！！！！！！！
+            # This part is when the xml has irrelevant classes, you can uncomment the following code
+            # Use the corresponding classes.txt to filter！！！！！！！！！！！！
             '''
             # classes_path = 'model_data/voc_classes.txt'
             # class_names = get_classes(classes_path)
