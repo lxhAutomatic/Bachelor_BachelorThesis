@@ -1,8 +1,7 @@
 #-------------------------------------#
-#   调用摄像头或者视频进行检测
-#   调用摄像头直接运行即可
-#   调用视频可以将cv2.VideoCapture()指定路径
-#   视频的保存并不难，可以百度一下看看
+#   Use camera or video for detection
+#   Just use the camera and run it directly
+#   When using video, you can specify the path to cv2.VideoCapture()
 #-------------------------------------#
 import time
 
@@ -14,7 +13,7 @@ from ssd import SSD
 
 ssd = SSD()
 #-------------------------------------#
-#   调用摄像头
+#   Using camera
 #   capture=cv2.VideoCapture("1.mp4")
 #-------------------------------------#
 capture=cv2.VideoCapture(0)
@@ -22,15 +21,15 @@ fps = 0.0
 
 while(True):
     t1 = time.time()
-    # 读取某一帧
+    # input a frame
     ref,frame=capture.read()
-    # 格式转变，BGRtoRGB
+    # Format conversion, BGRtoRGB
     frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
-    # 转变成Image
+    # Convert to Image
     frame = Image.fromarray(np.uint8(frame))
-    # 进行检测
+    # Perform the detection
     frame = np.array(ssd.detect_image(frame))
-    # RGBtoBGR满足opencv显示格式
+    # RGB to BGR to meet opencv display format
     frame = cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)
 
     fps  = ( fps + (1./(time.time()-t1)) ) / 2
