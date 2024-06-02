@@ -1,5 +1,5 @@
 #-------------------------------------#
-#       对单张图片进行预测
+#       Make predictions on a single image
 #-------------------------------------#
 from yolo import YOLO
 from PIL import Image
