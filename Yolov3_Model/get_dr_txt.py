@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 class mAP_Yolo(YOLO):
     #---------------------------------------------------#
-    #   检测图片
+    #   Image detection
     #---------------------------------------------------#
     def detect_image(self,image_id,image):
         self.confidence = 0.01
@@ -55,7 +55,7 @@ class mAP_Yolo(YOLO):
         top_bboxes = np.array(batch_detections[top_index,:4])
         top_xmin, top_ymin, top_xmax, top_ymax = np.expand_dims(top_bboxes[:,0],-1),np.expand_dims(top_bboxes[:,1],-1),np.expand_dims(top_bboxes[:,2],-1),np.expand_dims(top_bboxes[:,3],-1)
 
-        # 去掉灰条
+        # Remove gray bar
         boxes = yolo_correct_boxes(top_ymin,top_xmin,top_ymax,top_xmax,np.array([self.model_image_size[0],self.model_image_size[1]]),image_shape)
 
         for i, c in enumerate(top_label):
@@ -82,7 +82,7 @@ if not os.path.exists("./input/images-optional"):
 for image_id in tqdm(image_ids):
     image_path = "./VOCdevkit/VOC2007/JPEGImages/"+image_id+".jpg"
     image = Image.open(image_path)
-    # 开启后在之后计算mAP可以可视化
+    # After turning it on, mAP can be calculated and visualized later.
     # image.save("./input/images-optional/"+image_id+".jpg")
     yolo.detect_image(image_id,image)
     
