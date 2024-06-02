@@ -1,5 +1,5 @@
 # -------------------------------------#
-#       对数据集进行训练
+#       Train on the dataset
 # -------------------------------------#
 import os
 import numpy as np
@@ -99,13 +99,13 @@ def fit_ont_epoch(net, yolo_losses, epoch, epoch_size, epoch_size_val, gen, genv
 
 
 if __name__ == "__main__":
-    # 参数初始化
+    # Parameter initialization
     annotation_path = '2007_train.txt'
     model = YoloBody(Config)
     summary(model, (3, 416, 416), device='cpu')
     Cuda = True
     # -------------------------------#
-    #   Dataloder的使用
+    #   Use of Dataloder
     # -------------------------------#
     Use_Data_Loader = True
 
@@ -125,13 +125,13 @@ if __name__ == "__main__":
         cudnn.benchmark = True
         net = net.cuda()
 
-    # 建立loss函数
+    # Create loss function
     yolo_losses = []
     for i in range(3):
         yolo_losses.append(YOLOLoss(np.reshape(Config["yolo"]["anchors"], [-1, 2]),
                                     Config["yolo"]["classes"], (Config["img_w"], Config["img_h"]), Cuda))
 
-    # 0.1用于验证，0.9用于训练
+    # 0.1 for validation and 0.9 for training
     val_split = 0.1
     with open(annotation_path) as f:
         lines = f.readlines()
@@ -144,15 +144,15 @@ if __name__ == "__main__":
     with open('train.log', 'w+') as f:
         f.write('epoch,loss,val_loss')
     # ------------------------------------------------------#
-    #   主干特征提取网络特征通用，冻结训练可以加快训练速度
-    #   也可以在训练初期防止权值被破坏。
-    #   Init_Epoch为起始世代
-    #   Freeze_Epoch为冻结训练的世代
-    #   Epoch总训练世代
-    #   提示OOM或者显存不足请调小Batch_size
+    #   Backbone feature extraction network features are universal, and frozen training can speed up training.
+    #   It can also prevent the weights from being destroyed in the early stages of training.
+    #   Init_Epoch is the starting epoch
+    #   Freeze_Epoch is the epoch that freezes training
+    #   Epoch is the total training epoch
+    #   If it prompts OOM or insufficient video memory, please adjust the Batch_size smaller.
     # ------------------------------------------------------#
     if True:
-        # 最开始使用1e-3的学习率可以收敛的更快
+        # Initially, using a learning rate of 1e-3 can converge faster.
         lr = 1e-3
         Batch_size = 16
         Init_Epoch = 0
@@ -177,7 +177,7 @@ if __name__ == "__main__":
         epoch_size = num_train // Batch_size
         epoch_size_val = num_val // Batch_size
         # ------------------------------------#
-        #   冻结一定部分训练
+        #   Freeze certain portions of training
         # ------------------------------------#
         for param in model.backbone.parameters():
             param.requires_grad = False
@@ -210,7 +210,7 @@ if __name__ == "__main__":
         epoch_size = num_train // Batch_size
         epoch_size_val = num_val // Batch_size
         # ------------------------------------#
-        #   解冻后训练
+        #   Training after unfreezing
         # ------------------------------------#
         for param in model.backbone.parameters():
             param.requires_grad = True
