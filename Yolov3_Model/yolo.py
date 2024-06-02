@@ -1,5 +1,5 @@
 #-------------------------------------#
-#       创建YOLO类
+#      Create YOLO class
 #-------------------------------------#
 import cv2
 import numpy as np
@@ -15,8 +15,8 @@ from utils.config import Config
 from utils.utils import non_max_suppression, bbox_iou, DecodeBox,letterbox_image,yolo_correct_boxes
 
 #--------------------------------------------#
-#   使用自己训练好的模型预测需要修改2个参数
-#   model_path和classes_path都需要修改！
+#   Using your own trained model to predict requires modifying 2 parameters.
+#   Both model_path and classes_path need to be modified!
 #--------------------------------------------#
 class YOLO(object):
     _defaults = {
@@ -36,7 +36,7 @@ class YOLO(object):
             return "Unrecognized attribute name '" + n + "'"
 
     #---------------------------------------------------#
-    #   初始化YOLO
+    #   Initialize YOLO
     #---------------------------------------------------#
     def __init__(self, **kwargs):
         self.__dict__.update(self._defaults)
@@ -44,7 +44,7 @@ class YOLO(object):
         self.config = Config
         self.generate()
     #---------------------------------------------------#
-    #   获得所有的分类
+    #   Get all categories
     #---------------------------------------------------#
     def _get_class(self):
         classes_path = os.path.expanduser(self.classes_path)
@@ -53,13 +53,13 @@ class YOLO(object):
         class_names = [c.strip() for c in class_names]
         return class_names
     #---------------------------------------------------#
-    #   获得所有的分类
+    #   Get all categories
     #---------------------------------------------------#
     def generate(self):
         self.config["yolo"]["classes"] = len(self.class_names)
         self.net = YoloBody(self.config)
 
-        # 加快模型训练的效率
+        # Speed ​​up model training efficiency
         print('Loading weights into state dict...')
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         state_dict = torch.load(self.model_path, map_location=device)
@@ -77,7 +77,7 @@ class YOLO(object):
 
 
         print('{} model, anchors, and classes loaded.'.format(self.model_path))
-        # 画框设置不同的颜色
+        # Draw boxes and set different colors
         hsv_tuples = [(x / len(self.class_names), 1., 1.)
                       for x in range(len(self.class_names))]
         self.colors = list(map(lambda x: colorsys.hsv_to_rgb(*x), hsv_tuples))
@@ -86,7 +86,7 @@ class YOLO(object):
                 self.colors))
 
     #---------------------------------------------------#
-    #   检测图片
+    #   Image detection
     #---------------------------------------------------#
     def detect_image(self, image):
         image_shape = np.array(np.shape(image)[0:2])
@@ -123,7 +123,7 @@ class YOLO(object):
         top_bboxes = np.array(batch_detections[top_index,:4])
         top_xmin, top_ymin, top_xmax, top_ymax = np.expand_dims(top_bboxes[:,0],-1),np.expand_dims(top_bboxes[:,1],-1),np.expand_dims(top_bboxes[:,2],-1),np.expand_dims(top_bboxes[:,3],-1)
 
-        # 去掉灰条
+        # remove gray bar
         boxes = yolo_correct_boxes(top_ymin,top_xmin,top_ymax,top_xmax,np.array([self.model_image_size[0],self.model_image_size[1]]),image_shape)
 
         font = ImageFont.truetype(font='model_data/simhei.ttf',size=np.floor(3e-2 * np.shape(image)[1] + 0.5).astype('int32'))
@@ -146,7 +146,7 @@ class YOLO(object):
             bottom = min(np.shape(image)[0], np.floor(bottom + 0.5).astype('int32'))
             right = min(np.shape(image)[1], np.floor(right + 0.5).astype('int32'))
 
-            # 画框框
+            # Draw boxes
             label = '{} {:.2f}'.format(predicted_class, score)
             draw = ImageDraw.Draw(image)
             label_size = draw.textsize(label, font)
